@@ -18,6 +18,7 @@
 		9FE0F1E2264BAC7A0040B9F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE0F1E0264BAC7A0040B9F6 /* LaunchScreen.storyboard */; };
 		9FE0F1ED264BAC7B0040B9F6 /* SwiftLibraryExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE0F1EC264BAC7B0040B9F6 /* SwiftLibraryExampleTests.swift */; };
 		9FE0F1F8264BAC7B0040B9F6 /* SwiftLibraryExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE0F1F7264BAC7B0040B9F6 /* SwiftLibraryExampleUITests.swift */; };
+		9FE0F209264BAE930040B9F6 /* SwiftLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE0F208264BAE930040B9F6 /* SwiftLibrary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		9FE0F1F3264BAC7B0040B9F6 /* SwiftLibraryExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLibraryExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE0F1F7264BAC7B0040B9F6 /* SwiftLibraryExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLibraryExampleUITests.swift; sourceTree = "<group>"; };
 		9FE0F1F9264BAC7B0040B9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FE0F208264BAE930040B9F6 /* SwiftLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLibrary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			children = (
 				9FE0F1B6264B9F270040B9F6 /* SwiftLibrary.h */,
 				9FE0F1B7264B9F270040B9F6 /* Info.plist */,
+				9FE0F208264BAE930040B9F6 /* SwiftLibrary.swift */,
 			);
 			path = SwiftLibrary;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				TargetAttributes = {
 					9FE0F1B2264B9F260040B9F6 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					9FE0F1BB264B9F270040B9F6 = {
 						CreatedOnToolsVersion = 12.4;
@@ -380,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE0F209264BAE930040B9F6 /* SwiftLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +587,7 @@
 		9FE0F1C8264B9F270040B9F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8Z93889Z7E;
@@ -598,6 +604,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.narola.SwiftLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -606,6 +613,7 @@
 		9FE0F1C9264B9F270040B9F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8Z93889Z7E;
@@ -630,6 +638,7 @@
 		9FE0F1CB264B9F270040B9F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Z93889Z7E;
 				INFOPLIST_FILE = SwiftLibraryTests/Info.plist;
@@ -648,6 +657,7 @@
 		9FE0F1CC264B9F270040B9F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Z93889Z7E;
 				INFOPLIST_FILE = SwiftLibraryTests/Info.plist;
